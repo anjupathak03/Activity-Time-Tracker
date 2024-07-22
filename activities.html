@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial license=1.0">
+    <title>Daily Activities</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Daily Activities</a></li>
+            <li><a href="improve.html">Improve Productivity</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Daily Activities</h1>
+        <img src="da1.jpg" alt="Daily Activities" class="activity-image">
+        <div id="activity-list">
+            <h2>Activities for Today</h2>
+            <ul id="activities">
+                <!-- Activities will be displayed here -->
+            </ul>
+        </div>
+        <div id="activity-graph">
+            <h2>Improvement Graph</h2>
+            <canvas id="improvementChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

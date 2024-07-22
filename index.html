@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body> 
+    <>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="activities.html">Daily Activities</a></li>
+            <li><a href="improve.html">Improve Productivity</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <h1>Activity Time Tracker</h1>
+        <img src="att5.jpg" alt="Productive" class="activity-image">
+        <div class="activity-form">
+            <label for="activity-name">Activity Name:</label>
+            <input type="text" id="activity-name">
+            <label for="activity-type">Activity Type:</label>
+            <select id="activity-type">
+                <option value="productive">Productive</option>
+                <option value="health">Health-Related</option>
+                <option value="unproductive">Unproductive</option>
+            </select>
+            <label for="activity-time">Time Spent (in hours):</label>
+            <input type="number" id="activity-time" min="0" step="0.1">
+            <button onclick="addActivity()">Add Activity</button>
+        </div>
+        <div class="activity-summary">
+            <h2>Summary</h2>
+            <div class="summary-item">
+                <h3>Productive Hours</h3>
+                <p id="productive-hours">0</p>
+            </div>
+            <div class="summary-item">
+                <h3>Health-Related Hours</h3>
+                <p id="health-hours">0</p>
+            </div>
+            <div class="summary-item">
+                <h3>Unproductive Hours</h3>
+                <p id="unproductive-hours">0</p>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+    <>
+</body>
+</html>
